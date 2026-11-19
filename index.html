@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Finance Portfolio</title>
+  <style>
+    /* Basic, clean styling — easy to customize later */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      border-bottom: 2px solid #0f2942;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 6px 0;
+      color: #0f2942;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      margin: 0 0 14px 0;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
+      color: #0f2942;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-resume {
+      background-color: #0f2942;
+      color: #ffffff !important;
+      padding: 6px 14px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      color: #0f2942;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 6px;
+      margin-top: 36px;
+      font-size: 1.3rem;
+    }
+
+    .project {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .project h3 {
+      margin: 0 0 6px 0;
+      color: #111827;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 0 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & RESUME LINK -->
+  <header>
+    <h1>Your Full Name</h1>
+    <p class="subtitle">Finance & Economics Student | Aspiring Investment Banking & Corporate Finance Analyst</p>
+    <div class="links">
+      <!-- Put your PDF resume in the same folder and name it resume.pdf -->
+      <a href="resume.pdf" target="_blank" class="btn-resume">Download Resume (PDF)</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="mailto:youremail@example.com">youremail@example.com</a>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section>
+    <h2>About</h2>
+    <p>
+      Junior at [University Name] studying Finance (GPA: 3.8/4.0), focused on corporate valuation, 
+      financial modeling, and equity research. Below is a selection of valuation models, investment 
+      pitches, and data projects supplementing my resume.
+    </p>
+  </section>
+
+  <!-- FINANCE PROJECTS ("PLUS POINTS") -->
+  <section>
+    <h2>Selected Projects & Models</h2>
+
+    <div class="project">
+      <h3>1. DCF & Comparable Company Valuation — [Company Name, Ticker]</h3>
+      <p class="meta">Tools: Excel, S&P Capital IQ | <a href="#" target="_blank">View Read-Only Model</a> · <a href="#" target="_blank">Download .XLSX</a></p>
+      <ul>
+        <li>Built a 5-year unlevered free cash flow DCF model and trading comps table across 6 industry peers.</li>
+        <li>Modeled revenue growth drivers, working capital schedules, and WACC sensitivity tables, arriving at an implied share price of $XX.XX (+18% upside).</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>2. Long Equity Pitch — [Company Name, Ticker]</h3>
+      <p class="meta">Student Managed Investment Fund | <a href="#" target="_blank">View Slide Deck (PDF)</a></p>
+      <ul>
+        <li>Authored a 12-slide investment memo pitching a long position based on margin expansion and recurring revenue mix shift.</li>
+        <li>Outlined primary catalysts, EV/EBITDA valuation multiples, and downside risk mitigants.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>3. Portfolio Risk & Monte Carlo Simulation</h3>
+      <p class="meta">Tools: Python (pandas, NumPy, yfinance) | <a href="#" target="_blank">View Code & Charts</a></p>
+      <ul>
+        <li>Simulated 10,000 portfolio return paths across a 10-asset equity/bond allocation to identify the maximum Sharpe ratio frontier.</li>
+        <li>Calculated historical Value-at-Risk (VaR) and drawdowns during rate-hike regimes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & LEADERSHIP -->
+  <section>
+    <h2>Experience & Leadership</h2>
+    <ul>
+      <li><strong>Summer Finance Intern, [Company Name]</strong> (Summer 2026) — Assisted FP&A team with monthly variance analysis and 3-statement budget forecasting.</li>
+      <li><strong>Sector Analyst, [University Investment Fund]</strong> (2025 – Present) — Cover Industrials sector; pitched 2 equities to a 15-member investment committee.</li>
+    </ul>
+  </section>
+
+  <!-- CERTIFICATIONS & SKILLS -->
+  <section>
+    <h2>Certifications & Technical Skills</h2>
+    <ul>
+      <li><strong>Certifications:</strong> Bloomberg Market Concepts (BMC), Wall Street Prep Financial & Valuation Modeling</li>
+      <li><strong>Financial & Data Tools:</strong> Excel (VBA, PivotTables, Index-Match), Python, SQL, Bloomberg Terminal, FactSet</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Full Name. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yashwardhan Gadgil | Finance & Investment Portfolio</title>
   <style>
-   :root {
-      --navy-dark: #18181b;      /* Deep Charcoal */
-      --navy-main: #27272a;      /* Slate Gray */
-      --navy-light: #3f3f46;     /* Medium Gray */
-      --gold-accent: #ba0c2f;    /* Scarlet Red */
-      --gold-hover: #990a26;     /* Darker Scarlet on Hover */
-      --bg-light: #f4f4f5;       /* Soft Gray Page Background */
-      --card-bg: #ffffff;        /* Crisp White Cards */
-      --text-dark: #18181b;      /* Charcoal Text */
-      --text-muted: #52525b;     /* Muted Gray Subtitles */
-      --border-color: #e4e4e7;   /* Light Gray Borders */
+    :root {
+      --navy-dark: #0b192c;      /* Deep Midnight Navy */
+      --navy-main: #13294b;      /* Institutional Navy */
+      --scarlet: #ba0c2f;        /* Ohio State Scarlet */
+      --scarlet-hover: #960925;  /* Darker Scarlet on Hover */
+      --gold-accent: #c5a059;    /* Muted Champagne Gold */
+      --bg-light: #f1f5f9;       /* Crisp Cool Gray Background */
+      --card-bg: #ffffff;        /* Pure White Cards */
+      --text-dark: #0f172a;      /* High-Contrast Dark Text */
+      --text-muted: #475569;     /* Slate Subtitle Text */
+      --border-color: #cbd5e1;   /* Structured Card Borders */
     }
 
     * {
@@ -36,20 +36,20 @@
     }
 
     /* ================= NAVIGATION BAR ================= */
-   nav {
+    nav {
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(24, 24, 27, 0.94);
+      background: rgba(11, 25, 44, 0.96);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 2px solid var(--gold-accent);
       z-index: 1000;
     }
 
     .nav-container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 16px 24px;
+      padding: 14px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -57,80 +57,81 @@
 
     .logo {
       color: #ffffff;
-      font-size: 1.25rem;
-      font-weight: 700;
+      font-size: 1.3rem;
+      font-weight: 800;
       text-decoration: none;
       letter-spacing: 0.5px;
     }
 
     .logo span {
-      color: var(--gold-accent);
+      color: var(--scarlet);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 8px;
       list-style: none;
     }
 
     .nav-links a {
-      color: #cbd5e1;
+      color: #e2e8f0;
       text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: color 0.2s;
+      font-size: 0.92rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.2s, color 0.2s;
     }
 
-    .nav-links a:hover,
-    .nav-links a.active {
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
       color: var(--gold-accent);
     }
 
     .nav-resume-btn {
-      background-color: var(--gold-accent);
+      background-color: var(--scarlet) !important;
       color: #ffffff !important;
-      padding: 8px 16px;
-      border-radius: 5px;
-      font-weight: 600 !important;
-      transition: background-color 0.2s;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-left: 6px;
     }
 
     .nav-resume-btn:hover {
-      background-color: var(--gold-hover);
+      background-color: var(--scarlet-hover) !important;
+      color: #ffffff !important;
     }
 
     /* ================= HOME / HERO SECTION ================= */
-   #home {
+    #home {
       min-height: 100vh;
       background: 
-        linear-gradient(135deg, rgba(24, 24, 27, 0.92) 0%, rgba(39, 39, 42, 0.84) 100%),
+        linear-gradient(135deg, rgba(11, 25, 44, 0.91) 0%, rgba(19, 41, 75, 0.82) 100%),
         url('campus-bg.jpg') center/cover no-repeat;
       display: flex;
       align-items: center;
-      padding: 100px 24px 60px;
+      padding: 110px 24px 70px;
       color: #ffffff;
-    
+      border-bottom: 4px solid var(--scarlet);
     }
 
     .hero-content {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
       width: 100%;
     }
 
     .hero-badge {
-     .hero-badge {
       display: inline-block;
-      background: rgba(186, 12, 47, 0.25);
-      border: 1px solid rgba(186, 12, 47, 0.7);
+      background-color: var(--scarlet);
+      border: 1px solid var(--gold-accent);
       color: #ffffff;
-      padding: 6px 14px;
-      border-radius: 20px;
+      padding: 7px 16px;
+      border-radius: 6px;
       font-size: 0.85rem;
       font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 20px;
+      letter-spacing: 0.4px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
 
     .hero-content h1 {
@@ -142,39 +143,40 @@
     }
 
     .hero-subtitle {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: #cbd5e1;
-      max-width: 660px;
+      max-width: 680px;
       margin-bottom: 32px;
-      font-weight: 400;
     }
 
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 56px;
+      gap: 14px;
+      margin-bottom: 52px;
     }
 
     .btn-primary {
-      background-color: var(--gold-accent);
+      background-color: var(--scarlet);
       color: #ffffff;
+      border: 1px solid var(--scarlet);
       padding: 13px 26px;
       border-radius: 6px;
       font-weight: 600;
       text-decoration: none;
+      box-shadow: 0 4px 14px rgba(186, 12, 47, 0.35);
       transition: transform 0.2s, background-color 0.2s;
     }
 
     .btn-primary:hover {
-      background-color: var(--gold-hover);
+      background-color: var(--scarlet-hover);
       transform: translateY(-2px);
     }
 
     .btn-secondary {
       background-color: rgba(255, 255, 255, 0.08);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(197, 160, 89, 0.6);
       padding: 13px 26px;
       border-radius: 6px;
       font-weight: 600;
@@ -183,81 +185,121 @@
     }
 
     .btn-secondary:hover {
-      background-color: rgba(255, 255, 255, 0.16);
+      background-color: rgba(197, 160, 89, 0.18);
       transform: translateY(-2px);
     }
 
     .hero-highlights {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
-      padding-top: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      padding-top: 24px;
+    }
+
+    .highlight-item {
+      background: rgba(11, 25, 44, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-left: 3px solid var(--gold-accent);
+      padding: 16px 18px;
+      border-radius: 6px;
     }
 
     .highlight-item h4 {
       color: var(--gold-accent);
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.9px;
       margin-bottom: 4px;
     }
 
     .highlight-item p {
-      color: #e2e8f0;
-      font-size: 0.95rem;
+      color: #f1f5f9;
+      font-size: 0.94rem;
     }
 
     /* ================= SHARED SECTION STYLES ================= */
     section.content-section {
-      padding: 88px 24px;
-      max-width: 1100px;
+      padding: 80px 24px;
+      max-width: 1120px;
       margin: 0 auto;
     }
 
     .section-header {
-      margin-bottom: 40px;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 14px;
     }
 
     .section-tag {
-      color: var(--gold-accent);
+      display: inline-block;
+      background-color: var(--scarlet);
+      color: #ffffff;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      display: block;
-      margin-bottom: 6px;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
     }
 
     .section-header h2 {
-      font-size: 2.1rem;
-      color: var(--navy-main);
+      font-size: 2rem;
+      color: var(--navy-dark);
     }
 
     /* ================= ABOUT SECTION ================= */
     .about-grid {
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: 36px;
+      gap: 28px;
       align-items: start;
+    }
+
+    .about-text {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-top: 4px solid var(--navy-dark);
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(11, 25, 44, 0.05);
     }
 
     .about-text p {
       margin-bottom: 16px;
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       color: #334155;
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 8px;
+      border: 3px solid var(--gold-accent);
+      box-shadow: 0 6px 16px rgba(11, 25, 44, 0.12);
     }
 
     .skills-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-radius: 10px;
+      border-top: 4px solid var(--scarlet);
+      border-radius: 8px;
       padding: 28px;
-      box-shadow: 0 4px 12px rgba(15, 41, 66, 0.04);
+      box-shadow: 0 4px 12px rgba(11, 25, 44, 0.05);
     }
 
     .skills-card h3 {
-      color: var(--navy-main);
+      color: var(--navy-dark);
       margin-bottom: 16px;
       font-size: 1.15rem;
     }
@@ -269,67 +311,77 @@
     }
 
     .skill-tag {
-      background: #f1f5f9;
-      color: var(--navy-main);
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.88rem;
-      font-weight: 500;
-      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      color: var(--navy-dark);
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      border: 1px solid var(--border-color);
     }
 
-    /* ================= PROJECTS SECTION ================= */
+    /* ================= PROJECTS SECTION & BLOCK TABS ================= */
     .filter-bar {
-      display: flex;
+      display: inline-flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
+      background: #e2e8f0;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
       margin-bottom: 28px;
     }
 
     .filter-btn {
       background: #ffffff;
       border: 1px solid var(--border-color);
-      color: var(--text-dark);
-      padding: 8px 16px;
-      border-radius: 20px;
+      color: var(--navy-dark);
+      padding: 9px 18px;
+      border-radius: 6px;
       cursor: pointer;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 600;
       transition: all 0.2s;
     }
 
-    .filter-btn.active,
     .filter-btn:hover {
-      background: var(--navy-main);
+      border-color: var(--navy-dark);
+    }
+
+    .filter-btn.active {
+      background: var(--scarlet);
       color: #ffffff;
-      border-color: var(--navy-main);
+      border-color: var(--scarlet);
+      box-shadow: 0 2px 6px rgba(186, 12, 47, 0.3);
     }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
       gap: 24px;
     }
 
     .project-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-radius: 10px;
+      border-top: 4px solid var(--navy-dark);
+      border-radius: 8px;
       padding: 26px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 4px 12px rgba(15, 41, 66, 0.04);
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(11, 25, 44, 0.06);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
 
     .project-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(15, 41, 66, 0.08);
+      border-top-color: var(--scarlet);
+      box-shadow: 0 12px 24px rgba(11, 25, 44, 0.1);
     }
 
     .project-category {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
       color: var(--gold-accent);
       text-transform: uppercase;
@@ -338,15 +390,15 @@
     }
 
     .project-card h3 {
-      color: var(--navy-main);
+      color: var(--navy-dark);
       font-size: 1.2rem;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .project-card ul {
       padding-left: 18px;
-      margin-bottom: 20px;
-      color: #475569;
+      margin-bottom: 22px;
+      color: #334155;
       font-size: 0.95rem;
     }
 
@@ -355,42 +407,46 @@
     }
 
     .project-links {
-      border-top: 1px solid var(--border-color);
-      padding-top: 14px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 16px;
       display: flex;
-      gap: 16px;
-      font-size: 0.9rem;
-      font-weight: 600;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     .project-links a {
-      color: var(--navy-main);
+      background-color: var(--navy-dark);
+      color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-weight: 600;
       text-decoration: none;
+      transition: background-color 0.2s;
     }
 
     .project-links a:hover {
-      color: var(--gold-accent);
-      text-decoration: underline;
+      background-color: var(--scarlet);
     }
 
     /* ================= CERTIFICATES SECTION ================= */
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 20px;
     }
 
     .cert-card {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-left: 4px solid var(--gold-accent);
+      border-left: 5px solid var(--scarlet);
       border-radius: 8px;
-      padding: 22px;
-      box-shadow: 0 2px 8px rgba(15, 41, 66, 0.03);
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(11, 25, 44, 0.05);
     }
 
     .cert-card h3 {
-      color: var(--navy-main);
+      color: var(--navy-dark);
       font-size: 1.1rem;
       margin-bottom: 4px;
     }
@@ -398,30 +454,40 @@
     .cert-issuer {
       color: var(--text-muted);
       font-size: 0.9rem;
-      margin-bottom: 10px;
+      font-weight: 500;
+      margin-bottom: 12px;
     }
 
     .cert-card a {
-      font-size: 0.88rem;
+      display: inline-block;
+      background: #f1f5f9;
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.85rem;
       font-weight: 600;
-      color: var(--navy-main);
+      color: var(--navy-dark);
       text-decoration: none;
+      transition: all 0.2s;
     }
 
     .cert-card a:hover {
-      text-decoration: underline;
+      background: var(--scarlet);
+      color: #ffffff;
+      border-color: var(--scarlet);
     }
 
     /* ================= CONTACT SECTION ================= */
     .contact-wrapper {
       background: var(--navy-dark);
       color: #ffffff;
-      padding: 72px 24px;
+      padding: 76px 24px;
       margin-top: 40px;
+      border-top: 4px solid var(--scarlet);
     }
 
     .contact-container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
     }
 
@@ -443,29 +509,31 @@
     }
 
     .contact-card {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-top: 3px solid var(--gold-accent);
       border-radius: 8px;
       padding: 20px;
       text-decoration: none;
       color: #ffffff;
-      transition: background 0.2s, border-color 0.2s;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
       cursor: pointer;
     }
 
     .contact-card:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: var(--gold-accent);
+      background: rgba(255, 255, 255, 0.14);
+      border-top-color: var(--scarlet);
+      transform: translateY(-2px);
     }
 
     .contact-card span {
       display: block;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       color: var(--gold-accent);
       margin-bottom: 6px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .contact-card strong {
@@ -473,22 +541,26 @@
       word-break: break-all;
     }
 
-   footer {
-      background: #111113;
-      color: #a1a1aa;
+    footer {
+      background: #07101d;
+      color: #94a3b8;
       text-align: center;
       padding: 20px;
       font-size: 0.88rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* ================= MOBILE RESPONSIVE ================= */
     @media (max-width: 768px) {
       .nav-links {
-        gap: 14px;
-        font-size: 0.85rem;
+        gap: 4px;
+      }
+      .nav-links a {
+        padding: 6px 8px;
+        font-size: 0.82rem;
       }
       .nav-links li:first-child {
-        display: none; /* Saves space on small phone screens */
+        display: none;
       }
       .hero-content h1 {
         font-size: 2.3rem;
@@ -534,15 +606,15 @@
       <div class="hero-highlights">
         <div class="highlight-item">
           <h4>Focus Areas</h4>
-          <p>Equity Research, Valuation (DCF/Comps), & Portfolio Analytics</p>
+          <p>Equity Research, Valuation (DCF/Comps), &amp; Portfolio Analytics</p>
         </div>
         <div class="highlight-item">
           <h4>Credentials</h4>
-          <p>Specialized Master in Finance  & CFA Level I Candidate</p>
+          <p>Specialized Master in Finance &amp; CFA Level I Candidate</p>
         </div>
         <div class="highlight-item">
           <h4>Toolkit</h4>
-          <p>Financial Modeling, Excel, Python, & Capital Market Data</p>
+          <p>Financial Modeling, Excel, Python, &amp; Capital Market Data</p>
         </div>
       </div>
     </div>
@@ -564,24 +636,25 @@
           Beyond my academic coursework, I work on building dynamic valuation models, write investment memos, and analyze 
           market data to bridge theory with real-world capital allocation decisions.
         </p>
-        I'm actively seeking full-time or internship possibilities, and I'm willing to work in any field outside of my area of interest to expand my horizons. 
         <p>
-          
+          I'm actively seeking full-time or internship possibilities, and I'm open to opportunities across broader finance functions to expand my horizons.
         </p>
-        </div>
-      <!-- CHANGE PROFILE PICTURE WITH YOUR OWN-->
-      <img src="profile.jpeg" alt="Yashwardhan Gadgil" style="width: 100%; max-width: 260px; border-radius: 10px; border: 2px solid #c5a059; margin-bottom: 20px;" />
-      <div class="skills-card">
-        <h3>Core Competencies & Tools</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">DCF & LBO Modeling</span>
-          <span class="skill-tag">Comparable Valuation</span>
-          <span class="skill-tag">Equity Research</span>
-          <span class="skill-tag">Financial Statement Analysis</span>
-          <span class="skill-tag">Portfolio Optimization</span>
-          <span class="skill-tag">Advanced Excel</span>
-          <span class="skill-tag">Python (pandas / NumPy)</span>
-          <span class="skill-tag">Bloomberg / FactSet</span>
+      </div>
+
+      <div class="about-sidebar">
+        <img src="profile.jpeg" alt="Yashwardhan Gadgil" class="profile-photo" />
+        <div class="skills-card">
+          <h3>Core Competencies &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DCF &amp; LBO Modeling</span>
+            <span class="skill-tag">Comparable Valuation</span>
+            <span class="skill-tag">Equity Research</span>
+            <span class="skill-tag">Financial Statement Analysis</span>
+            <span class="skill-tag">Portfolio Optimization</span>
+            <span class="skill-tag">Advanced Excel</span>
+            <span class="skill-tag">Python (pandas / NumPy)</span>
+            <span class="skill-tag">Bloomberg / FactSet</span>
+          </div>
         </div>
       </div>
     </div>
@@ -591,23 +664,23 @@
   <section id="projects" class="content-section">
     <div class="section-header">
       <span class="section-tag">Portfolio</span>
-      <h2>Projects & Case Studies</h2>
+      <h2>Projects &amp; Case Studies</h2>
     </div>
 
     <!-- Category Filter Buttons -->
     <div class="filter-bar">
       <button class="filter-btn active" onclick="filterProjects('all', this)">All Work</button>
-      <button class="filter-btn" onclick="filterProjects('valuation', this)">Valuation & Modeling</button>
-      <button class="filter-btn" onclick="filterProjects('research', this)">Equity Research & Case Studies</button>
-      <button class="filter-btn" onclick="filterProjects('quant', this)">Quantitative & Data</button>
+      <button class="filter-btn" onclick="filterProjects('valuation', this)">Valuation &amp; Modeling</button>
+      <button class="filter-btn" onclick="filterProjects('research', this)">Equity Research &amp; Case Studies</button>
+      <button class="filter-btn" onclick="filterProjects('quant', this)">Quantitative &amp; Data</button>
     </div>
 
-<div class="projects-grid">
+    <div class="projects-grid">
       <!-- Project 1: 401(k) Plan Audit -->
       <div class="project-card" data-category="research">
         <div>
-          <div class="project-category">Portfolio Management & Fiduciary Audit</div>
-          <h3>Fortune 500 401(k) Plan Audit & Restructuring</h3>
+          <div class="project-category">Portfolio Management &amp; Fiduciary Audit</div>
+          <h3>Fortune 500 401(k) Plan Audit &amp; Restructuring</h3>
           <ul>
             <li>Co-led the fee and performance audit of a 14-fund core-satellite 401(k) lineup using Bloomberg and Morningstar under ERISA standards, flagging <strong>AMRGX</strong> (4.66% ER, 5.75% load), <strong>MIOPX</strong> (11th-percentile 5-yr rank), and inverse fund <strong>BEARX</strong> (249% turnover) for removal.</li>
             <li>Screened low-cost replacements—recommending <strong>VTIAX</strong> (0.09% ER) for international exposure, emerging-market ETFs (<strong>IEMG</strong>, <strong>AVEM</strong>), and short/intermediate Treasury funds to ladder against <strong>SPTL</strong> duration risk.</li>
@@ -621,8 +694,8 @@
       <!-- Project 2: Big Pharma & Eli Lilly -->
       <div class="project-card" data-category="research">
         <div>
-          <div class="project-category">Equity Research & Industry Analysis</div>
-          <h3>Large-Cap Pharmaceuticals & Eli Lilly (LLY) Analysis</h3>
+          <div class="project-category">Equity Research &amp; Industry Analysis</div>
+          <h3>Large-Cap Pharmaceuticals &amp; Eli Lilly (LLY) Analysis</h3>
           <ul>
             <li>Tracked regulatory, patent-cliff ($290B sector revenue exposed through 2035), and therapeutic catalysts across S&amp;P 500 big pharma, identifying <strong>Eli Lilly (LLY)</strong> as the sector leader on GLP-1 dominance and peer-leading 5-year projected EPS growth (19.6%).</li>
             <li>Authored the SWOT analysis weighing Lilly's patent moat through 2039 ($142B protected sales) and $2.88B autoimmune M&amp;A against GLP-1 concentration and litigation risks.</li>
@@ -636,7 +709,7 @@
       <!-- Project 3: Norway Sovereign Wealth Fund -->
       <div class="project-card" data-category="research">
         <div>
-          <div class="project-category">Institutional Strategy & ESG Case Study</div>
+          <div class="project-category">Institutional Strategy &amp; ESG Case Study</div>
           <h3>Norway's Pension Fund Global ($864B SWF) Advisory</h3>
           <ul>
             <li>Synthesized and delivered an MBA case presentation for Norway's Ministry of Finance proposing a strategic allocation shift to <strong>65% equities, 25% fixed income, and 10% real assets</strong> with energy underweighting to hedge national oil exposure.</li>
@@ -651,8 +724,8 @@
       <!-- Project 4: Bloomberg & Capital IQ -->
       <div class="project-card" data-category="quant">
         <div>
-          <div class="project-category">Institutional Terminals & Market Data</div>
-          <h3>Equity Tear Sheet & Market Screening (Bloomberg &amp; Capital IQ)</h3>
+          <div class="project-category">Institutional Terminals &amp; Market Data</div>
+          <h3>Equity Tear Sheet &amp; Market Screening (Bloomberg &amp; Capital IQ)</h3>
           <ul>
             <li>Built a fundamental and cost-of-capital tear sheet on <strong>Valero Energy (VLO)</strong> across 10+ Bloomberg functions (<code>EE</code>, <code>WACC</code>, <code>BETA</code>, <code>SI</code>, <code>ANR</code>), capturing an 8.48x forward P/E, 11.22% WACC, and 8 consecutive quarters of EPS beats.</li>
             <li>Executed cross-asset screening in S&amp;P Capital IQ tracking 90-day sector M&amp;A volume, sovereign credit ratings, short-interest ratios, commodity spot pricing, and IPO benchmarks.</li>
@@ -664,19 +737,20 @@
         </div>
       </div>
     </div>
+  </section>
 
   <!-- 4. CERTIFICATES & CREDENTIALS SECTION -->
   <section id="certificates" class="content-section">
     <div class="section-header">
       <span class="section-tag">Credentials</span>
-      <h2>Certifications & Coursework</h2>
+      <h2>Certifications &amp; Coursework</h2>
     </div>
 
     <div class="cert-grid">
       <div class="cert-card">
         <h3>CFA Program — Level I Candidate</h3>
         <p class="cert-issuer">CFA Institute • In Progress</p>
-        <p style="font-size: 0.9rem; color: #475569;">Focusing on Ethical & Professional Standards, Quantitative Methods, Financial Statement Analysis, and Equity/Fixed Income Valuation.</p>
+        <p style="font-size: 0.9rem; color: #475569;">Focusing on Ethical &amp; Professional Standards, Quantitative Methods, Financial Statement Analysis, and Equity/Fixed Income Valuation.</p>
       </div>
 
       <div class="cert-card">
@@ -686,7 +760,7 @@
       </div>
 
       <div class="cert-card">
-        <h3>Financial & Valuation Modeling</h3>
+        <h3>Financial &amp; Valuation Modeling</h3>
         <p class="cert-issuer">Wall Street Prep / Corporate Finance</p>
         <a href="#" target="_blank">View Certificate →</a>
       </div>
@@ -710,12 +784,12 @@
 
         <a href="https://www.linkedin.com/in/yashwardhan-gadgil-b19a0a232" target="_blank" class="contact-card">
           <span>LinkedIn</span>
-          <strong>Connect on LinkedIn →</strong> 
+          <strong>Connect on LinkedIn →</strong>
         </a>
 
         <a href="https://www.chess.com/member/yash20313" target="_blank" class="contact-card">
           <span>Chess</span>
-          <strong> ♟️→</strong>
+          <strong>Challenge Me on Chess.com ♟️ →</strong>
         </a>
 
         <a href="YashwardhanGadgil Resume .pdf" target="_blank" class="contact-card">
